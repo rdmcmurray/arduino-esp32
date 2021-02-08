@@ -43,7 +43,6 @@ typedef struct {
  *      - ESP_ERR_NVS_NO_FREE_PAGES if the NVS storage contains no empty pages
  *        (which may happen if NVS partition was truncated)
  *      - ESP_ERR_NOT_FOUND if no partition with label "nvs" is found in the partition table
- *      - ESP_ERR_NO_MEM in case memory could not be allocated for the internal structures
  *      - one of the error codes from the underlying flash storage driver
  */
 esp_err_t nvs_flash_init(void);
@@ -58,7 +57,6 @@ esp_err_t nvs_flash_init(void);
  *      - ESP_ERR_NVS_NO_FREE_PAGES if the NVS storage contains no empty pages
  *        (which may happen if NVS partition was truncated)
  *      - ESP_ERR_NOT_FOUND if specified partition is not found in the partition table
- *      - ESP_ERR_NO_MEM in case memory could not be allocated for the internal structures
  *      - one of the error codes from the underlying flash storage driver
  */
 esp_err_t nvs_flash_init_partition(const char *partition_label);
@@ -73,7 +71,6 @@ esp_err_t nvs_flash_init_partition(const char *partition_label);
  *      - ESP_ERR_NVS_NO_FREE_PAGES if the NVS storage contains no empty pages
  *        (which may happen if NVS partition was truncated)
  *      - ESP_ERR_INVALID_ARG in case partition is NULL
- *      - ESP_ERR_NO_MEM in case memory could not be allocated for the internal structures
  *      - one of the error codes from the underlying flash storage driver
  */
 esp_err_t nvs_flash_init_partition_ptr(const esp_partition_t *partition);
@@ -169,7 +166,6 @@ esp_err_t nvs_flash_erase_partition_ptr(const esp_partition_t *partition);
  *      - ESP_ERR_NVS_NO_FREE_PAGES if the NVS storage contains no empty pages
  *        (which may happen if NVS partition was truncated)
  *      - ESP_ERR_NOT_FOUND if no partition with label "nvs" is found in the partition table
- *      - ESP_ERR_NO_MEM in case memory could not be allocated for the internal structures
  *      - one of the error codes from the underlying flash storage driver
  */
 esp_err_t nvs_flash_secure_init(nvs_sec_cfg_t* cfg);
@@ -187,7 +183,6 @@ esp_err_t nvs_flash_secure_init(nvs_sec_cfg_t* cfg);
  *      - ESP_ERR_NVS_NO_FREE_PAGES if the NVS storage contains no empty pages
  *        (which may happen if NVS partition was truncated)
  *      - ESP_ERR_NOT_FOUND if specified partition is not found in the partition table
- *      - ESP_ERR_NO_MEM in case memory could not be allocated for the internal structures
  *      - one of the error codes from the underlying flash storage driver
  */
 esp_err_t nvs_flash_secure_init_partition(const char *partition_label, nvs_sec_cfg_t* cfg);

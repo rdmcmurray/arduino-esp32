@@ -216,3 +216,4 @@ void software_reset_cpu(int cpu_no);
 #endif
 
 #endif /* _ROM_RTC_H_ */
+

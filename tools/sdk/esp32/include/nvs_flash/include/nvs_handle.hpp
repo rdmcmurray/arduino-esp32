@@ -269,3 +269,4 @@ esp_err_t NVSHandle::get_item(const char *key, T &value) {
 } // nvs
 
 #endif // NVS_HANDLE_HPP_
+

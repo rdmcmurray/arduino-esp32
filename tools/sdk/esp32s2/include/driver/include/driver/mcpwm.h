@@ -662,3 +662,4 @@ esp_err_t mcpwm_isr_register(mcpwm_unit_t mcpwm_num, void (*fn)(void *), void *a
 #endif
 
 #endif  //SOC_MCPWM_SUPPORTED
+

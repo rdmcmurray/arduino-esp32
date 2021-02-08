@@ -36,4 +36,3 @@ PROVIDE ( esp_rom_md5_final  = 0x4005db1c );
 
 PROVIDE ( esp_rom_printf   = ets_printf );
 PROVIDE ( esp_rom_delay_us = ets_delay_us );
-PROVIDE ( esp_rom_install_uart_printf = ets_install_uart_printf );

@@ -399,3 +399,4 @@ int usb_dev_get_configuration(void);
 #ifdef __cplusplus
 }
 #endif
+

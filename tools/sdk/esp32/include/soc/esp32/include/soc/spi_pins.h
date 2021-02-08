@@ -46,3 +46,5 @@
 #define VSPI_IOMUX_PIN_NUM_CS   5
 #define VSPI_IOMUX_PIN_NUM_WP   22
 #define VSPI_IOMUX_PIN_NUM_HD   21
+
+

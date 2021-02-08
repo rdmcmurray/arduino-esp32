@@ -29,7 +29,6 @@
 
 #include "sdkconfig.h"
 #include "mbedtls/config.h"
-#include "soc/soc_caps.h"
 
 /**
  * \name SECTION: System support
@@ -131,13 +130,7 @@
 #ifdef CONFIG_MBEDTLS_HARDWARE_SHA
 #define MBEDTLS_SHA1_ALT
 #define MBEDTLS_SHA256_ALT
-
-#if SOC_SHA_SUPPORT_SHA512
 #define MBEDTLS_SHA512_ALT
-#else
-#undef MBEDTLS_SHA512_ALT
-#endif
-
 #else
 #undef MBEDTLS_SHA1_ALT
 #undef MBEDTLS_SHA256_ALT

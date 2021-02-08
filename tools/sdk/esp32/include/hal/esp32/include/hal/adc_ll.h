@@ -2,7 +2,6 @@
 
 #include "soc/adc_periph.h"
 #include "hal/adc_types.h"
-#include "soc/rtc_io_struct.h"
 #include <stdbool.h>
 
 #ifdef __cplusplus

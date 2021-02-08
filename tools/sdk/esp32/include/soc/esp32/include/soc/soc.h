@@ -12,7 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#pragma once
+#ifndef _ESP32_SOC_H_
+#define _ESP32_SOC_H_
 
 #ifndef __ASSEMBLER__
 #include <stdint.h>
@@ -413,3 +414,5 @@
 
 //Invalid interrupt for number interrupt matrix
 #define ETS_INVALID_INUM                        6
+
+#endif /* _ESP32_SOC_H_ */
